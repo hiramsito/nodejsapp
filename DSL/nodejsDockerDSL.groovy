@@ -1,5 +1,5 @@
-job('Aplicacion Node.js Docker DSL') {
-    description('Aplicación Node JS Docker DSL para el curso de Jenkins')
+job('Practica publish Docker DSL') {
+    description('Practica de Publish a Docker-hub')
     scm {
         git('https://github.com/hiramsito/nodejsapp.git', 'master') { node ->
             node / gitConfigName('hiramsito')
