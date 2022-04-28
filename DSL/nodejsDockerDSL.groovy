@@ -14,7 +14,7 @@ job('Practica publish Docker DSL') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('hiramsito/dockerpractica')
+            repositoryName('hiramsito/nodejsapp')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
             forcePull(false)
